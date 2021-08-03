@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-size: 14px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    font-size: 14px;
+    color: #363636;
+    text-decoration: none;
+}
+a:hover {
+    color: #1428a0;
+}
+
+img {
+    /* 解决边框与行内元素的问题 */
+    vertical-align: top;
+    width: 100%;
+    /* ie浏览器下图片默认会有边框 */
+    border: none;
+}
