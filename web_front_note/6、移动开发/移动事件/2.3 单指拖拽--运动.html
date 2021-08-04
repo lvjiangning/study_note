@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title>2.3 单指拖拽--运动</title>
+    <style>
+        body {
+            height: 2000px;
+        }
+        .backtop {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            width: 45px;
+            height: 45px;
+            line-height: 45px;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 50%;
+            color: #fff;
+            font-size: 30px;
+            -webkit-tap-highlight-color: transparent;
+            /* 使用这个进行位置变化，性能较高 */
+            /*transform: translate3d(x, y, 0);*/
+        }
+    </style>
+</head>
+<body>
+    <a href="#" id="backtop" class="backtop">&uarr;</a>
+
+    <script>
+        var backtop = document.getElementById('backtop');
+        //记录当前位置
+        var curPoint = {
+            x: 0,
+            y: 0
+        };
+
+        backtop.addEventListener('click', function () {
+            // move(this, 0, 0);
+            // 向左移动10 ，向上移动10
+            move(this, -10 + curPoint.x, -10 + curPoint.y);
+            curPoint.x += -10;
+            curPoint.y += -10;
+        }, false);
+
+        function move(el, x, y) {
+            x = x || 0;
+            y = y || 0;
+            // GPU 参与 性能较好translate3d
+            el.style.transform = 'translate3d(' + x + 'px, ' + y + 'px, 0)';
+        }
+    </script>
+</body>
+</html>

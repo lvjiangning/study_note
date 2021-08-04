@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title>2.2 touch事件的event对象</title>
+    <style>
+        body {
+            height: 2000px;
+        }
+        .box {
+            width: 150px;
+            height: 150px;
+            background-color: red;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="box" class="box"></div>
+
+    <script>
+        var boxEl = document.getElementById('box');
+
+        boxEl.addEventListener('touchstart', handleStart, false);
+        boxEl.addEventListener('touchmove', handleMove, false);
+        boxEl.addEventListener('touchend', handleEnd, false); //手指离开物体的那一刹那触发
+
+        function handleStart(ev) {
+            console.log('touchstart', ev);
+            // ev.touches 所有触摸在屏幕上的触摸信息（个数）
+            // ev.targetTouches 在当前物体上的触摸信息（个数）
+            //ev.changedTouches 在移动的触摸信息（个数）
+            // console.log(ev.touches, ev.targetTouches, ev.changedTouches);
+            var touch = ev.changedTouches[0]; //得到touch信息，包含屏幕的 x、y轴等位置，以及触发时间的元素的问信息
+
+            console.log(touch.pageX, touch.pageY);
+        }
+        function handleMove(ev) {
+            console.log('touchmove');
+        }
+        function handleEnd(ev) {
+            console.log('touchend', ev);
+            // console.log(ev.touches, ev.targetTouches, ev.changedTouches);
+        }
+    </script>
+</body>
+</html>
