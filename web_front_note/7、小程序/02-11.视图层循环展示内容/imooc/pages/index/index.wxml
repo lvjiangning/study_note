@@ -1,0 +1,4 @@
+<block wx:for="{{users}}" wx:key="*this">
+  <view>hello</view>
+  <view>world</view>
+</block>

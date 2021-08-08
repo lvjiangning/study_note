@@ -1,0 +1,21 @@
+<view class="tabs">
+  <view class="tab active">
+    实战排行
+    <view class="active-bar"/>
+  </view>
+  <view class="tab">
+    路径排行
+    <view class="active-bar"/>
+  </view>
+</view>
+<view class="time">
+  <view class="week">周</view>
+  <view class="month time-active">月</view>
+</view>
+<view class="list">
+  <view class="item">
+    <image class="item-image" src="https://img1.mukewang.com/szimg/5f1eafb709e18bf912000676.png" />
+    <view class="item-title">iOS界面传值</view>
+    <!-- <image src="" /> -->
+  </view>
+</view>

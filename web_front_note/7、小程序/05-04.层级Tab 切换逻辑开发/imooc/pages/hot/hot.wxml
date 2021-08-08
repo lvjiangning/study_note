@@ -1,0 +1,58 @@
+<view class="tabs">
+  <view
+    wx:for="{{rankTypes}}"
+    wx:key="type"
+    class="tab {{rankType === item.type ? 'active': ''}}"
+    data-type="{{item.type}}"
+    bindtap="handleTabChange"
+  >
+    {{item.title}}
+    <view
+      wx:if="{{rankType === item.type}}"
+      class="active-bar"
+    />
+  </view>
+</view>
+<view class="time">
+  <view 
+    class="period {{rankPeriod === item.value ? 'period-active': ''}}"
+    wx:for="{{rankPeriods}}"
+    data-type="{{item.value}}"
+    bindtap="handlePeriodChange"
+  >{{item.title}}</view>
+</view>
+<view class="list">
+  <view class="item">
+    <image class="item-image" src="https://img1.mukewang.com/szimg/5f1eafb709e18bf912000676.png" />
+    <view class="item-title">
+      <view class="item-title-inner">
+        iOS界面传值
+      </view>
+    </view>
+    <view class="item-number">
+      <image class="item-number-img" src="../../resources/first.png" />
+    </view>
+  </view>
+  <view class="item">
+    <image class="item-image" src="https://img1.mukewang.com/szimg/5f1eafb709e18bf912000676.png" />
+    <view class="item-title">
+      <view class="item-title-inner">
+        前端进阶：响应式开发与常用框架
+      </view>
+    </view>
+    <view class="item-number">
+      <image class="item-number-img" src="../../resources/first.png" />
+    </view>
+  </view>
+  <view class="item">
+    <image class="item-image" src="https://img1.mukewang.com/szimg/5f1eafb709e18bf912000676.png" />
+    <view class="item-title">
+      <view class="item-title-inner">
+        iOS界面传值
+      </view>
+    </view>
+    <view class="item-number">
+      <image class="item-number-img" src="../../resources/first.png" />
+    </view>
+  </view>
+</view>

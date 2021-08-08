@@ -1,0 +1,9 @@
+<view wx:if="{{showName}}" bindtap="handleTap">
+  {{name}}
+</view>
+
+<checkbox checked="{{true}}"></checkbox>
+
+<view hidden="{{!showHelloWorld}}">hello world</view>
+
+1+1

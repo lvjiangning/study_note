@@ -1,0 +1,18 @@
+<!--index.wxml-->
+<view class="container">
+  <text class="userinfo-nickname">hello world</text>
+  <text class="userinfo-nickname">hello world</text>
+  <text class="userinfo-nickname">hello world</text>
+  <text class="userinfo-nickname">hello world</text>
+   <text class="userinfo-nickname">hello world</text>
+  <text class="userinfo-nickname">hello world</text>
+  <text class="userinfo-nickname">hello world</text>
+  <text class="userinfo-nickname">hello world</text>
+ <text class="userinfo-nickname">hello world</text>
+  <text class="userinfo-nickname">hello world</text>
+  <text class="userinfo-nickname">hello world</text>
+  <text class="userinfo-nickname">hello world</text>
+  <text class="userinfo-nickname">hello world</text>
+  <text class="userinfo-nickname">hello world</text>
+  <text class="userinfo-nickname">hello world</text>
+</view>

@@ -1,0 +1,5 @@
+<import src="./content.wxml" />
+
+<view>header</view>
+<template is="content-template" data="{{content}}"/>
+<view>footer</view>

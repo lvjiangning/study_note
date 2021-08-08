@@ -1,0 +1,49 @@
+<view class="tabs">
+  <view class="tab active">
+    实战排行
+    <view class="active-bar"/>
+  </view>
+  <view class="tab">
+    路径排行
+    <view class="active-bar"/>
+  </view>
+</view>
+<view class="time">
+  <view class="week">周</view>
+  <view class="month time-active">月</view>
+</view>
+<view class="list">
+  <view class="item">
+    <image class="item-image" src="https://img1.mukewang.com/szimg/5f1eafb709e18bf912000676.png" />
+    <view class="item-title">
+      <view class="item-title-inner">
+        iOS界面传值
+      </view>
+    </view>
+    <view class="item-number">
+      <image class="item-number-img" src="../../resources/first.png" />
+    </view>
+  </view>
+  <view class="item">
+    <image class="item-image" src="https://img1.mukewang.com/szimg/5f1eafb709e18bf912000676.png" />
+    <view class="item-title">
+      <view class="item-title-inner">
+        前端进阶：响应式开发与常用框架
+      </view>
+    </view>
+    <view class="item-number">
+      <image class="item-number-img" src="../../resources/first.png" />
+    </view>
+  </view>
+  <view class="item">
+    <image class="item-image" src="https://img1.mukewang.com/szimg/5f1eafb709e18bf912000676.png" />
+    <view class="item-title">
+      <view class="item-title-inner">
+        iOS界面传值
+      </view>
+    </view>
+    <view class="item-number">
+      <image class="item-number-img" src="../../resources/first.png" />
+    </view>
+  </view>
+</view>
